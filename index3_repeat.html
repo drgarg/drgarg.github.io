@@ -102,20 +102,34 @@
 					
 						<!-- Form -->
 						<div class="col-12">
-							
-							<form action="https://mailthis.to/pg_email"
-								method="POST" encType="multipart/form-data">
-								<input type="text" name="name" placeholder="Your name">
-								<input type="text" name="_replyto" placeholder="Your email">
-								<textarea name="message" placeholder="Enter your message here"></textarea>
-								<input type="file" name="file" placeholder="Attachments (optional)">
-								<input type="hidden" name="_subject" value="Contact form submitted">
-								<input type="hidden" name="_after" value="http:/gargmed.com/thankyou.html">
-								<input type="hidden" name="_honeypot" value="">
-								<input type="hidden" name="_confirmation" value="Thank you for your submission.">
-								<input type="submit" value="Send">
+							<form method="post" action="https://formspree.io/prabhat.garg.md@gmail.com">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text" name="_replyto" id="_replyto" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" placeholder="Subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<!--
+									<div class="col-12">
+										
+										<input type="text" name="human" id="human" placeholder="What is 2+2? (Hint: Just type 4 here!)">
+									</div>
+									-->
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear Form" class="alt" /></li>
+										</ul>
+									</div>
+								</div>
 							</form>
-							
 						</div>
 						
 						
