@@ -15,7 +15,7 @@
 
 		  gtag('config', 'UA-126359662-1');
 		</script>
-		
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<title>Prabhat Garg, MD</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -104,12 +104,13 @@
 						<div class="col-12">
 							
 							<form action="https://mailthis.to/pg_email"
-								method="POST" encType="multipart/form-data">
+								method="POST" >
 								<input type="text" name="name" placeholder="Your name">
 								<input type="text" name="_replyto" placeholder="Your email">
-								<textarea name="message" placeholder="Enter your message here"></textarea>
-								<input type="hidden" name="_subject" value="Contact form submitted">
-								<input type="hidden" name="_after" value="http:/gargmed.com/thankyou.html">
+								<input type="text" name="_subject" placeholder="Subject">
+								<textarea name="message" placeholder="Enter your message here"></textarea>		
+								<div class="g-recaptcha" data-sitekey="6LdY-LoUAAAAADYCq1AtJ8OY6tz2lRT6ejiBA18F"></div> <br/>      
+								<!-- <input type="hidden" name="_after" value="http:/gargmed.com/thankyou.html"> -->
 								<input type="hidden" name="_honeypot" value="">
 								<input type="hidden" name="_confirmation" value="Thank you for your submission.">
 								<input type="submit" value="Send">
