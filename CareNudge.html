@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareNudge | Behavioral Support for High-Risk Patients</title>
+  <style>
+    :root {
+      --primary: #2A5C82;
+      --accent: #3AAFA9;
+      --text: #333333;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    header {
+      background: white;
+      padding: 4rem 0;
+      text-align: center;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .logo-icon {
+      background: var(--primary);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-icon i {
+      color: white;
+      font-size: 1.5rem;
+    }
+    .logo-text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0 0 1rem;
+      color: var(--primary);
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin: 3rem 0 1.5rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+    }
+    .cta-button {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .cta-button:hover {
+      background: #1E4560;
+    }
+    .pain-points {
+      background: #F8FAFC;
+      padding: 3rem 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .card i {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-comment-medical"></i>
+        </div>
+        <div class="logo-text">CareNudge</div>
+      </div>
+      
+      <h1>Your Highest-Risk Patients Need More Than a Pamphlet</h1>
+      <p style="font-size: 1.2rem; opacity: 0.8;">They need a life-coach. Engage non-compliant diabetes and CHF patients with psychology-driven SMS – no staff time required.</p>
+      <a href="#waitlist" class="cta-button">Join CareNudge Waitlist</a>
+    </div>
+  </header>
+
+  <div class="pain-points">
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <i class="fas fa-exclamation-triangle"></i>
+          <h3>The Daily Frustration</h3>
+          <p>You’ve tried pamphlets, lectures, and stern warnings…<br> 
+          <em>Why won’t it stick?</em></p>
+          <ul style="text-align: left; padding-left: 20px;">
+            <li>“Why won’t they just check their glucose?”</li>
+            <li>“Another CHF readmission? We’ve talked about daily weights 100 times.”</li>
+            <li>“I don’t have time to babysit – I have a waiting room full of patients.”</li>
+          </ul>
+        </div>
+        <div class="card">
+          <i class="fas fa-clipboard-check"></i>
+          <h3>Our Approach</h3>
+          <p>A HIPAA-compliant SMS system designed by clinicians to:</p>
+          <ul style="text-align: left; padding-left: 20px;">
+            <li><strong>Reinforce</strong> care plans between visits</li>
+            <li><strong>Flag</strong> at-risk patients early</li>
+            <li><strong>Require zero staff effort</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fas fa-user-friends"></i>
+        <h4>1. Define Your Cohort</h4>
+        <p>Identify patients struggling with HbA1c >9, recurrent CHF exacerbations, or poor adherence.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-comments"></i>
+        <h4>2. Automated Support</h4>
+        <p>Patients get 3-5 weekly messages based on behavioral psychology principles.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <h4>3. Monitor Trends</h4>
+        <p>Receive monthly reports on engagement and potential red flags.</p>
+      </div>
+    </div>
+
+    <h2>Messages That Actually Work</h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fas fa-pills"></i>
+        <p><strong>Medication Support</strong><br>
+        “Hi Natasha!, taking your meds today helps protect your heart. Did you take your Torsemide this morning? Reply YES or NEED HELP.”</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-weight"></i>
+        <p><strong>Weight Tracking</strong><br>
+        “Daily weight checks prevent 68% of CHF complications. Please reply with today’s weight in pounds. Thank you for caring for your heart!”</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-walking"></i>
+        <p><strong>Gentle Activity</strong><br>
+        “A 10-minute walk after meals can lower blood sugar spikes. Want to try today? We’ll check in tonight! ”</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-star"></i>
+        <p><strong>Positive Reinforcement</strong><br>
+        “You checked your glucose 5x this week – that’s amazing progress! What helped you stay on track?”</p>
+      </div>
+    </div>
+
+    <h2 id="waitlist">Join Clinics Exploring CareNudge</h2>
+    <form action="https://formspree.io/f/movjvdbr" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Clinic Email" required>
+      <input type="text" name="clinic" placeholder="Clinic Name" required>
+      <select name="role" required>
+        <option value="">Your Role</option>
+        <option value="physician">Physician</option>
+        <option value="nurse">Nurse Manager</option>
+        <option value="admin">Practice Administrator</option>
+      </select>
+      <button type="submit" class="cta-button">Get Early Access</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 CareNudge.<br>
+      <a href="#" style="color: white;">Privacy Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
